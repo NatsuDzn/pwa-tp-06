@@ -1,0 +1,146 @@
+.heading {
+  height: 155px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-image: url("~@/assets/img/bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+
+  &__logo {
+    margin-left: 18px;
+
+    h1 {
+      background-color: white;
+      color: black;
+      font-size: 2.25rem;
+      font-weight: bold;
+      line-height: 54px;
+      letter-spacing: 0.225em;
+      text-align: left;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.landing {
+  border-radius: 28px 28px 0 0;
+  // margin-top: 175px;
+  z-index: 30000;
+  position: sticky;
+  background-color: white;
+  padding: 1rem;
+  padding-bottom: 0;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #3b3b3b;
+    text-align: left;
+    max-width: 85%;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    color: black;
+    text-align: left;
+    margin-top: 18px;
+
+    span {
+      color: $highlight;
+      font-weight: bold;
+    }
+  }
+
+    h2 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    margin: .75rem 0;
+  }
+
+  &__card {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    box-shadow: 0px 4px 35px rgba(189, 189, 189, 0.25);
+    border-radius: 7px;
+    margin: 1rem 0;
+
+    &--img {
+      width: 80px;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-right: 1rem;
+    }
+
+    &--text {
+      padding: 0.5rem;
+
+      h3 {
+        font-weight: bold;
+        font-size: 0.5rem;
+        line-height: 12px;
+      }
+
+      p {
+        text-align: left;
+        font-size: 10px;
+
+        span {
+          color: #b4e6ac;
+        }
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 48px;
+          height: auto;
+        }
+
+        p {
+          margin-top: .5rem;
+          margin-right: 1rem;
+
+          &::first-letter {
+            color: #76CD68;
+          }
+        }
+      }
+    }
+  }
+
+  &__cta {
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: .5rem;
+    margin: 66px 0;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    background: #76CD68;
+    border-radius: 5px;
+    color: white;
+  }
+}

@@ -1,0 +1,16 @@
+// Misc
+@import "reset";
+@import "fonts";
+@import "mixins";
+
+// Pages
+@import "pages/app.scss";
+@import "pages/landing.scss";
+
+// Components
+@import "components/header.scss";
+@import "components/footer.scss";
+
+body {
+  font-family: Poppins;
+}

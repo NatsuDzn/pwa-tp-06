@@ -10,15 +10,17 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
+    meta: { title: "Oishi" }
   },
   {
     path: "/listing",
     name: "Listing",
-    component: Listing
+    component: Listing,
+    meta: { title: "Liste des articles" }
   },
   {
-    path: "/Article/:slug",
+    path: "/Article/:id",
     name: "Article",
     component: Article
   }
@@ -26,6 +28,12 @@ const routes = [
 
 const router = new VueRouter({
   routes
+});
+
+router.beforeEach((toRoute, fromRoute, next) => {
+  window.document.title =
+    toRoute.meta && toRoute.meta.title ? toRoute.meta.title : "Oishi";
+  next();
 });
 
 export default router;

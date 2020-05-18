@@ -1,0 +1,30 @@
+[
+  {
+    "id": "review-1",
+    "title": "Riz, saumon cru, avocat et sauce au soja",
+    "articleImg": "/img/bowl.jpg",
+    "rank": "4/5",
+    "rankImg": "/img/svg/4-forks.svg"
+  },
+  {
+    "id": "review-2",
+    "title": "Riz, saumon cru, avocat et sauce au soja",
+    "articleImg": "/img/bowl.jpg",
+    "rank": "4/5",
+    "rankImg": "/img/svg/4-forks.svg"
+  },
+  {
+    "id": "review-3",
+    "title": "Riz, saumon cru, avocat et sauce au soja",
+    "articleImg": "/img/bowl.jpg",
+    "rank": "4/5",
+    "rankImg": "/img/svg/4-forks.svg"
+  },
+  {
+    "id": "review-4",
+    "title": "Riz, saumon cru, avocat et sauce au soja",
+    "articleImg": "/img/bowl.jpg",
+    "rank": "4/5",
+    "rankImg": "/img/svg/4-forks.svg"
+  }
+]

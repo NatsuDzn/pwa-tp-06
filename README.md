@@ -1,4 +1,9 @@
-# pwa-tp-06
+# pwa-tp-oishi
+
+## Team
+
+- Celine Teixeira Fernandes (UX/UI)
+- Nathanaël Louzoun (Front)
 
 ## Project setup
 ```
