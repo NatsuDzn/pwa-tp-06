@@ -6,6 +6,10 @@
   </div>
 </template>
 
+<style lang="scss">
+@import "../src/assets/scss/misc/mixins.scss";
+</style>
+
 <script>
 import Header from "@/components/Header.vue";
 // import Footer from "@/components/Footer.vue";

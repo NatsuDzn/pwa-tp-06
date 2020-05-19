@@ -1,7 +1,7 @@
 module.exports = {
   pwa: {
     name: "Oishi",
-    themeColor: "#4DBA87",
+    themeColor: "#76cd68",
     msTileColor: "#000000",
     appleMobileWebAppCapable: "yes",
     appleMobileWebAppStatusBarStyle: "black",

@@ -1,7 +1,8 @@
 // Misc
 @import "reset";
-@import "fonts";
-@import "mixins";
+@import "misc/fonts.scss";
+@import "misc/mixins.scss";
+@import "misc/animations.scss";
 
 // Pages
 @import "pages/app.scss";
