@@ -1,10 +1,6 @@
 <template>
   <div>
-    <div class="heading">
-      <div class="heading__logo">
-        <h1>Oi<br />shi</h1>
-      </div>
-    </div>
+    <Heading />
     <div>
       <div class="landing">
         <h1>
@@ -22,23 +18,27 @@
           proposant des restaurants à Paris
         </p>
 
-        <h2>Nos dernières critiques</h2>
-        <div v-for="(lastArticle, index) in lastArticles" :key="index">
-          <router-link v-bind:to="'/Article/' + lastArticle.id">
-            <div class="landing__card">
-              <div
-                class="landing__card--img"
-                :style="{ backgroundImage: `url(${lastArticle.articleImg})` }"
-              ></div>
-              <div class="landing__card--text">
-                <h3>{{ lastArticle.title }}</h3>
-                <span>
-                  <p>{{ lastArticle.rank }}</p>
-                  <img v-bind:src="lastArticle.rankImg" alt="Rating" />
-                </span>
-              </div>
+        <h2>Le plat phare du mois</h2>
+        <div>
+          <div class="landing__card">
+            <img
+              class="landing__card--img"
+              :style="{
+                backgroundImage: 'url(' + require('@/assets/img/bowl.png') + ')'
+              }"
+            />
+            <div class="landing__card--text">
+              <h3>Oyakodon</h3>
+              <span>
+                <p>5/5</p>
+                <img src="../../public/img/svg/bowl.svg" alt="Rating" />
+                <img src="../../public/img/svg/bowl.svg" alt="Rating" />
+                <img src="../../public/img/svg/bowl.svg" alt="Rating" />
+                <img src="../../public/img/svg/bowl.svg" alt="Rating" />
+                <img src="../../public/img/svg/bowl.svg" alt="Rating" />
+              </span>
             </div>
-          </router-link>
+          </div>
         </div>
         <button class="landing__cta">Voir toutes les critiques</button>
       </div>
@@ -47,30 +47,13 @@
 </template>
 
 <script>
-import axios from "axios";
-
-const API_URL = "data/articles.json";
+// @ is an alias to /src
+import Heading from "@/components/Heading.vue";
 
 export default {
-  name: "Landing",
-  data() {
-    return {
-      lastArticles: []
-    };
-  },
-  computed: {
-    article() {
-      return this.lastArticles.find(
-        article => article.title === this.$route.params.articleName
-      );
-    }
-  },
-  async created() {
-    axios(API_URL)
-      .then(res => {
-        this.lastArticles = res.data;
-      })
-      .catch(err => console.error(err));
+  name: "Home",
+  components: {
+    Heading
   }
 };
 </script>

@@ -1,31 +1,3 @@
-.heading {
-  height: 155px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  background-image: url("~@/assets/img/bg.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  position: sticky;
-  top: 0;
-
-  &__logo {
-    margin-left: 18px;
-
-    h1 {
-      background-color: white;
-      color: black;
-      font-size: 2.25rem;
-      font-weight: bold;
-      line-height: 54px;
-      letter-spacing: 0.225em;
-      text-align: left;
-      padding: 0.5rem;
-    }
-  }
-}
-
 .landing {
   border-radius: 28px 28px 0 0;
   // margin-top: 175px;
@@ -34,11 +6,6 @@
   background-color: white;
   padding: 1rem;
   padding-bottom: 0;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
 
   h1 {
     font-style: normal;
@@ -64,13 +31,13 @@
     }
   }
 
-    h2 {
+  h2 {
     font-size: 14px;
     line-height: 21px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
-    margin: .75rem 0;
+    margin: 0.75rem 0;
   }
 
   &__card {
@@ -91,6 +58,9 @@
     }
 
     &--text {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
       padding: 0.5rem;
 
       h3 {
@@ -113,17 +83,16 @@
         align-items: center;
 
         img {
-          width: 48px;
+          width: 16px;
           height: auto;
+          margin: 6px;
         }
 
         p {
-          margin-top: .5rem;
+          margin-top: 0.5rem;
           margin-right: 1rem;
-
-          &::first-letter {
-            color: #76CD68;
-          }
+          color: #76cd68;
+          font-size: 10px;
         }
       }
     }
@@ -133,13 +102,13 @@
     outline: 0;
     border: 0;
     width: 100%;
-    padding: .5rem;
+    padding: 0.5rem;
     margin: 66px 0;
     margin-top: 0;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
-    background: #76CD68;
+    background: #76cd68;
     border-radius: 5px;
     color: white;
   }

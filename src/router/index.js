@@ -20,7 +20,7 @@ const routes = [
     meta: { title: "Liste des articles" }
   },
   {
-    path: "/Article/:id",
+    path: "/article/:id",
     name: "Article",
     component: Article
   }
