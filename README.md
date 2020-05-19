@@ -1,5 +1,11 @@
 # pwa-tp-oishi
 
+<p align="center">
+  <a href="" rel="noopener">
+ <img src="https://i.imgur.com/nD8ILkN.png" alt="Project logo"></a>
+ <h3 align="center">Oishi</h3>
+</p>
+
 ## Team
 
 - Celine Teixeira Fernandes (UX/UI)
