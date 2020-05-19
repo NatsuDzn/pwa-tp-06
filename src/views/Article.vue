@@ -129,6 +129,7 @@ export default {
   @media only screen and (min-width: 1024px) {
     margin: 6rem auto;
     max-width: 1440px;
+    width: 75%;
   }
 
   h1 {
