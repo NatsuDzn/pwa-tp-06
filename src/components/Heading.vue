@@ -33,7 +33,7 @@
   background-position: bottom;
   background-size: cover;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     min-height: 30vh;
     background-position: left;
     background-size: 60%;
@@ -59,7 +59,7 @@
   nav {
     display: none;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       display: flex;
       width: 100%;
       justify-content: flex-end;

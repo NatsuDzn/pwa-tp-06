@@ -77,7 +77,7 @@ export default {
     padding-bottom: 65px;
     animation: fadeIn 0.75s ease-in-out;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       padding: 6rem;
     }
     h2 {
@@ -88,7 +88,7 @@ export default {
       text-align: left;
       margin: 0.75rem 0;
 
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 768px) {
         font-size: 24px;
         line-height: normal;
       }
@@ -98,7 +98,7 @@ export default {
 
 .card {
   display: flex;
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     display: none;
   }
 
@@ -109,7 +109,7 @@ export default {
 
 .desktop-card {
   display: none;
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -128,7 +128,7 @@ export default {
 .article {
   animation: fadeIn 0.75s ease-in-out;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     margin: 6rem auto;
     max-width: 1440px;
     width: 75%;
@@ -143,7 +143,7 @@ export default {
     text-align: left;
     padding: 1rem;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       font-size: 32px;
       line-height: normal;
       padding-left: 0;
@@ -165,7 +165,7 @@ export default {
     padding: 1rem;
     font-size: 12px;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       font-size: 18px;
     }
 
@@ -181,7 +181,7 @@ export default {
       img {
         margin-right: 5px;
 
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 768px) {
           width: 16px;
         }
       }
@@ -196,7 +196,7 @@ export default {
     font-size: 12px;
     color: #9c9c9c;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       font-size: 16px;
     }
   }
@@ -207,14 +207,14 @@ export default {
     text-align: left;
     padding-top: 0;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       font-size: 18px;
     }
 
     p {
       margin: 1rem 0;
 
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 768px) {
         padding: 2rem;
       }
 
@@ -232,12 +232,12 @@ export default {
 .comments {
   padding-bottom: 60px;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     margin-top: 1.5rem;
   }
 
   &__section {
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       margin-bottom: 4rem;
     }
   }
@@ -252,7 +252,7 @@ export default {
     padding: 0 1rem;
     padding-bottom: 0;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       font-size: 24px;
     }
   }
@@ -266,7 +266,7 @@ export default {
     padding-bottom: 0;
     margin-top: 1rem;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       font-size: 24px;
     }
   }
@@ -282,7 +282,7 @@ export default {
     padding: 0.5rem 1rem;
     margin-top: 1rem;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       width: 90%;
       margin: 1.5rem auto;
       padding: 2rem;
@@ -302,7 +302,7 @@ export default {
         margin-bottom: 0.5rem;
       }
 
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 768px) {
         font-size: 24px;
         line-height: normal;
         align-items: center;
@@ -318,7 +318,7 @@ export default {
         margin-right: 0.5rem;
         margin-bottom: 0.5rem;
 
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 768px) {
           font-size: 18px;
         }
       }
@@ -330,7 +330,7 @@ export default {
       line-height: 12px;
       text-align: left;
 
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 768px) {
         font-size: 16px;
       }
     }
@@ -341,7 +341,7 @@ export default {
     flex-direction: column;
     padding: 1rem;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       margin-top: 1.5rem;
     }
 
@@ -356,7 +356,7 @@ export default {
       font-size: 14px;
       font-family: Poppins;
 
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 768px) {
         margin: 1.25rem 0rem;
         font-size: 18px;
         padding: 1rem;
@@ -390,7 +390,7 @@ export default {
       box-shadow: 0px 4px 35px rgba(172, 172, 172, 0.25);
       border: none;
 
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 768px) {
         width: auto;
         max-width: 100%;
         margin: 1.25rem 0rem;
