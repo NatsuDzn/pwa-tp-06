@@ -143,6 +143,7 @@ export default {
     @media only screen and (min-width: 1024px) {
       font-size: 32px;
       line-height: normal;
+      padding-left: 0;
     }
   }
 
@@ -281,6 +282,7 @@ export default {
     @media only screen and (min-width: 1024px) {
       width: 90%;
       margin: 1.5rem auto;
+      padding: 2rem;
     }
 
     &:nth-child(0) {
@@ -289,14 +291,24 @@ export default {
 
     &--header {
       display: flex;
-      align-items: center;
       color: #9c9c9c;
       font-size: 8px;
       line-height: 12px;
 
+      svg {
+        margin-bottom: 0.5rem;
+      }
+
       @media only screen and (min-width: 1024px) {
         font-size: 24px;
         line-height: normal;
+        align-items: center;
+
+        svg {
+          width: 96px;
+          height: auto;
+          margin-bottom: 0.5rem;
+        }
       }
 
       p {
@@ -314,6 +326,10 @@ export default {
       font-size: 10px;
       line-height: 12px;
       text-align: left;
+
+      @media only screen and (min-width: 1024px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -401,6 +417,7 @@ export default {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   img {
