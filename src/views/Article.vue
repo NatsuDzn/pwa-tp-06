@@ -60,9 +60,11 @@
           <input type="email" placeholder="Votre adresse mail" />
           <textarea
             name=""
-            placeholder="240 caractères max"
-            maxlength="240"
+            placeholder="280 caractères max"
+            :maxlength="max"
+            v-model="text"
           ></textarea>
+          <div class="count" v-text="text.length + ' / 280'"></div>
           <button>Envoyez</button>
         </div>
 
@@ -90,7 +92,9 @@ export default {
   },
   data() {
     return {
-      post: null
+      post: null,
+      max: 280,
+      text: ""
     };
   },
 
@@ -122,8 +126,6 @@ export default {
 @import "../assets/scss/misc/mixins.scss";
 
 .article {
-  // padding: 1rem;
-
   animation: fadeIn 0.75s ease-in-out;
 
   @media only screen and (min-width: 1024px) {
@@ -346,7 +348,7 @@ export default {
     input {
       width: 100%;
       height: 25px;
-      margin: 0.25rem 0rem;
+      margin: 0.75rem 0rem;
       background: #ffffff;
       box-shadow: 0px 4px 35px rgba(172, 172, 172, 0.25);
       outline: 0;
@@ -378,6 +380,7 @@ export default {
     }
 
     textarea {
+      font-family: Poppins;
       width: 95%;
       max-width: 95%;
       margin: 0 auto;
@@ -385,7 +388,7 @@ export default {
       padding: 10px;
       background: #ffffff;
       box-shadow: 0px 4px 35px rgba(172, 172, 172, 0.25);
-      font-family: Poppins;
+      border: none;
 
       @media only screen and (min-width: 1024px) {
         width: auto;
@@ -401,6 +404,11 @@ export default {
       @include button-style;
     }
   }
+}
+
+.count {
+  text-align: right;
+  margin: 0.5rem;
 }
 
 .share {
