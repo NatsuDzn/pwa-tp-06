@@ -1,8 +1,6 @@
 <template>
   <div v-if="post">
-    Article {{ $route.params.id }}
     <h1>{{ post.title }}</h1>
-    {{ post.body }}
   </div>
 </template>
 

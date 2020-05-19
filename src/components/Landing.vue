@@ -40,7 +40,11 @@
             </div>
           </div>
         </div>
-        <button class="landing__cta">Voir toutes les critiques</button>
+        <button class="landing__cta">
+          <router-link to="/listing/">
+            Voir toutes les critiques
+          </router-link>
+        </button>
       </div>
     </div>
   </div>
