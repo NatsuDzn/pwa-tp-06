@@ -26,10 +26,11 @@ export default {
   },
 
   created() {
-    fetch("../../public/data/articles.json").then(response => {
+    fetch(
+      "https://raw.githubusercontent.com/NatsuDzn/pwa-tp-oishi/master/public/data/articles.json"
+    ).then(response => {
       response.json().then(data => {
         this.posts = data;
-        console.log(data);
       });
     });
   }
