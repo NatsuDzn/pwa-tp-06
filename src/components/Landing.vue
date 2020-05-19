@@ -41,11 +41,11 @@
               </div>
             </router-link>
           </div>
-          <button class="landing__cta">
-            <router-link to="/listing/">
+          <router-link to="/listing/">
+            <button class="landing__cta">
               Voir toutes les critiques
-            </router-link>
-          </button>
+            </button>
+          </router-link>
         </div>
       </div>
     </div>

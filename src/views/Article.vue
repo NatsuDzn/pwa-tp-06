@@ -65,12 +65,13 @@
           ></textarea>
           <button>Envoyez</button>
         </div>
-      </div>
-      <div class="share">
-        <input type="text" value="Get link" id="link" />
-        <button id="share" @click="copytoCliboard">
-          Partager <img src="../../public/img/svg/share.svg" />
-        </button>
+
+        <div class="share">
+          <input type="text" value="Get link" id="link" />
+          <button id="share" @click="copytoCliboard">
+            Partager <img src="../../public/img/svg/share.svg" />
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -126,7 +127,8 @@ export default {
   animation: fadeIn 0.75s ease-in-out;
 
   @media only screen and (min-width: 1024px) {
-    padding: 6rem;
+    margin: 6rem auto;
+    max-width: 1440px;
   }
 
   h1 {
@@ -206,7 +208,7 @@ export default {
     }
 
     p {
-      margin: 0.75rem 0;
+      margin: 1rem 0;
 
       @media only screen and (min-width: 1024px) {
         padding: 2rem;
@@ -397,6 +399,8 @@ export default {
     @include button-style;
     width: 200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
 
   img {

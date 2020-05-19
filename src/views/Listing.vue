@@ -74,6 +74,7 @@ export default {
 .list {
   .content {
     padding: 1rem;
+    padding-bottom: 65px;
     animation: fadeIn 0.75s ease-in-out;
 
     @media only screen and (min-width: 1024px) {
