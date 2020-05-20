@@ -42,9 +42,9 @@ self.addEventListener("push", event => {
 
   const options = {
     body: pushMessage,
-    icon: "./img/apple-touch-icon-60x60.png",
+    icon: "./img/icons/icon-152x152.png",
     // Windows
-    image: "./img/apple-touch-icon-60x60.png",
+    image: "./img/oyakodon.jpg",
     vibrate: [200, 100, 200, 100],
     tag: "vibration-sample"
   };
