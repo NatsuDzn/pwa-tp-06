@@ -60,7 +60,6 @@ export default {
       response => {
         response.json().then(data => {
           this.posts = data;
-          console.log(data);
         });
       }
     );

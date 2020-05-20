@@ -8,7 +8,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(
-  new RegExp("https://my-json-server.typicode.com/NatsuDzn/demo/posts/(.*)"),
+  new RegExp("https://my-json-server.typicode.com/NatsuDzn/demo/(.*)"),
   new workbox.strategies.CacheFirst({
     cacheName: "jsonplaceholder",
     method: "GET",
@@ -22,7 +22,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  new RegExp("https://my-json-server.typicode.com/NatsuDzn/demo/posts"),
+  new RegExp("/img/icons/(.*)"),
   new workbox.strategies.CacheFirst({
     cacheName: "jsonplaceholder",
     method: "GET",
